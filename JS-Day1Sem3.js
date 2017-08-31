@@ -1,3 +1,4 @@
+//page1 
 function add(n1, n2) {   // Function declaration
 
     return n1 + n2;
@@ -17,6 +18,7 @@ var cb = function (n1, n2, callback) {
 };
 
 // Callbacks (with map, filter and foreach)
+
 
 // 1)
 
@@ -67,9 +69,18 @@ var cb = function (n1, n2, callback) {
     }
 };
 
+
+
+// 3 using map and join)
+console.log("===========================================");
+var li = boys.map(function(boys){
+    return "<ul><li>"+boys+"</li></ul>"                                     
+}).join(" ");
+console.log(li);
 console.log("===========================================");
 
-// 4) - a
+
+//  4) - a
 
 var cars = [
     {id: 1, year: 1997, make: 'Ford', model: 'E350', price: 3000},
